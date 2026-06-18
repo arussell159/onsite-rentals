@@ -1,5 +1,5 @@
 const scriptUrl = new URL(document.currentScript.src);
-const siteRoot = new URL("../", scriptUrl);
+const siteRoot = new URL("../../", scriptUrl);
 
 async function loadIncludes() {
   const includeTargets = document.querySelectorAll("[data-include]");
