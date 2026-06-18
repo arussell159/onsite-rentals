@@ -1,0 +1,29 @@
+{
+  "name": "onsite-rentals",
+  "version": "1.0.0",
+  "description": "Onsite Rentals website built with Astro and Storyblok.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arussell159/onsite-rentals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arussell159/onsite-rentals/issues"
+  },
+  "homepage": "https://github.com/arussell159/onsite-rentals#readme",
+  "dependencies": {
+    "@storyblok/astro": "^9.0.12",
+    "astro": "^6.4.8"
+  }
+}
