@@ -1,6 +1,19 @@
 const scriptUrl = new URL(document.currentScript.src);
 const siteRoot = new URL("../../", scriptUrl);
 
+function setFavicon() {
+  let favicon = document.querySelector('link[rel~="icon"]');
+
+  if (!favicon) {
+    favicon = document.createElement("link");
+    favicon.rel = "icon";
+    document.head.appendChild(favicon);
+  }
+
+  favicon.type = "image/png";
+  favicon.href = new URL("assets/images/onsite-rentals-favicon.png", siteRoot);
+}
+
 async function loadIncludes() {
   const includeTargets = document.querySelectorAll("[data-include]");
 
@@ -144,4 +157,5 @@ function initializeSite() {
   updateHeaderState();
 }
 
+setFavicon();
 loadIncludes().then(initializeSite);
