@@ -11,10 +11,12 @@
     content="Coriolis flow meter rental, emergency meter availability, cleaning, repair and calibration for conventional and MPD drilling operations."
   >
 
+  <link rel="icon" type="image/png" href="assets/images/onsite-rentals-favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
 
@@ -33,7 +35,7 @@
       --color-surface: #f6f8f9;
       --color-white: #ffffff;
 
-      --font-sans: "Inter", Arial, sans-serif;
+      --font-sans: "Noto Sans", Arial, sans-serif;
 
       --shadow-card: 0 22px 40px rgba(20, 43, 56, 0.08);
 
@@ -167,23 +169,21 @@
 
     .hero {
       position: relative;
-      min-height: 670px;
+      min-height: 600px;
       overflow: hidden;
       display: flex;
       align-items: center;
 
       background:
-        radial-gradient(
-          circle at 78% 36%,
-          rgba(74, 178, 207, 0.28),
-          transparent 24%
-        ),
         linear-gradient(
-          115deg,
-          #04334f 0%,
-          #075d83 48%,
-          #0d7898 100%
-        );
+          90deg,
+          rgba(2, 33, 51, 0.86) 0%,
+          rgba(2, 33, 51, 0.68) 44%,
+          rgba(2, 33, 51, 0.28) 100%
+        ),
+        url("assets/images/hero-background.png");
+      background-position: -14% 64%;
+      background-size: 115% auto;
 
       color: var(--color-white);
     }
@@ -236,14 +236,7 @@
     /* abstract meter graphic */
 
     .hero-visual {
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 50%;
-      opacity: 0.75;
-      pointer-events: none;
+      display: none;
     }
 
     .hero-circle {
@@ -444,10 +437,12 @@
 
       background:
         linear-gradient(
-          145deg,
-          #04334f,
-          var(--color-blue-700)
-        );
+          rgba(2, 33, 51, 0.78),
+          rgba(2, 33, 51, 0.78)
+        ),
+        url("assets/images/rig-meter-image.png");
+      background-position: center center;
+      background-size: cover;
 
       color: var(--color-white);
     }
@@ -641,7 +636,14 @@
     .cta {
       position: relative;
       overflow: hidden;
-      background: var(--color-blue-700);
+      background:
+        linear-gradient(
+          rgba(2, 33, 51, 0.78),
+          rgba(2, 33, 51, 0.78)
+        ),
+        url("assets/images/hero-background.png");
+      background-position: 28% 64%;
+      background-size: 115% auto;
       color: var(--color-white);
     }
 
@@ -793,7 +795,7 @@
       }
 
       .hero {
-        min-height: 650px;
+        min-height: 600px;
       }
 
       .hero-content {
@@ -909,17 +911,14 @@
 
       <div class="shell hero-content">
 
-        <p class="eyebrow eyebrow-light">
-          Coriolis Meter Rental & Field Support
-        </p>
+    
 
         <h1>
-          Flow measurement ready when you need it.
+          Coriolis Flow Meter Rentals for Drilling Operations
         </h1>
 
         <p class="hero-copy">
-          Coriolis flow meter rentals, emergency availability and field
-          support for conventional and managed pressure drilling operations.
+          Emergency availability and short to long term flow meter rentals for conventional and managed pressure drilling operations.
         </p>
 
         <div class="hero-actions">
@@ -954,7 +953,7 @@
       <div class="shell intro-grid">
 
         <div>
-          <p class="eyebrow">Onsite Rentals</p>
+
 
           <h2>
             Coriolis flow measurement for drilling operations.
@@ -1041,9 +1040,7 @@
 
         <div class="emergency-card">
 
-          <span class="emergency-label">
-            Emergency Services Coverage
-          </span>
+
 
           <div class="emergency-stat">
             24 HR
@@ -1058,9 +1055,7 @@
 
         <div class="emergency-copy">
 
-          <p class="eyebrow">
-            Planned Protection
-          </p>
+
 
           <h2>
             Have the right meter reserved before you need it.
@@ -1124,7 +1119,6 @@
         <div class="section-heading">
 
           <div>
-            <p class="eyebrow">Built for Drilling</p>
 
             <h2>
               Equipment and support designed around drilling operations.
@@ -1191,9 +1185,6 @@
 
         <div>
 
-          <p class="eyebrow">
-            Why Onsite Rentals
-          </p>
 
           <h2>
             Specialized equipment. Practical support.
@@ -1269,9 +1260,6 @@
 
         <div class="cta-copy">
 
-          <p class="eyebrow eyebrow-light">
-            Meter Rental & Support
-          </p>
 
           <h2>
             Need a Coriolis meter for your operation?
