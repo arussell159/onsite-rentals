@@ -157,9 +157,15 @@
     }
 
     .site-brand {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: 0.035em;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .site-brand img {
+      display: block;
+      width: 190px;
+      max-width: 52vw;
+      height: auto;
     }
 
 
@@ -184,7 +190,7 @@
         url("assets/images/hero-background.png");
       background-position: 42% 64%;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 130% auto;
 
       color: var(--color-white);
     }
@@ -713,10 +719,16 @@
     }
 
     .footer-brand {
-      margin: 0 0 12px;
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: 0.035em;
+      display: inline-flex;
+      margin: 0 0 14px;
+      align-items: center;
+    }
+
+    .footer-brand img {
+      display: block;
+      width: 190px;
+      max-width: 52vw;
+      height: auto;
     }
 
     .footer-copy,
@@ -798,6 +810,8 @@
 
       .hero {
         min-height: 600px;
+        background-position: 42% 64%;
+        background-size: auto 120%;
       }
 
       .hero-content {
@@ -885,8 +899,8 @@
 
   <header class="site-header">
     <div class="shell">
-      <a class="site-brand" href="#top">
-        ONSITE RENTALS
+      <a class="site-brand" href="#top" aria-label="Onsite Rentals home">
+        <img src="assets/images/onsite-rentals-header-logo.png" alt="Onsite Rentals">
       </a>
     </div>
   </header>
@@ -1300,9 +1314,9 @@
 
       <div>
 
-        <p class="footer-brand">
-          ONSITE RENTALS
-        </p>
+        <a class="footer-brand" href="#top" aria-label="Onsite Rentals home">
+          <img src="assets/images/onsite-rentals-header-logo.png" alt="Onsite Rentals">
+        </a>
 
         <p class="footer-copy">
           Micro Motion Coriolis Flow Meter Rentals
