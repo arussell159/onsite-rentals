@@ -29,6 +29,7 @@ function setFavicon() {
   }
 
   favicon.type = "image/png";
+  favicon.sizes = "144x144";
   favicon.href = new URL("assets/images/onsite-rentals-favicon.png", siteRoot);
 }
 
