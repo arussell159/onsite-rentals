@@ -1,5 +1,23 @@
 const scriptUrl = new URL(document.currentScript.src);
 const siteRoot = new URL("../../", scriptUrl);
+const googleTagManagerId = "GTM-PV3N9GF4";
+
+function loadGoogleTagManager() {
+  if (window.googleTagManagerLoaded) return;
+
+  window.googleTagManagerLoaded = true;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    "gtm.start": new Date().getTime(),
+    event: "gtm.js"
+  });
+
+  const gtmScript = document.createElement("script");
+
+  gtmScript.async = true;
+  gtmScript.src = `https://www.googletagmanager.com/gtm.js?id=${googleTagManagerId}`;
+  document.head.appendChild(gtmScript);
+}
 
 function setFavicon() {
   let favicon = document.querySelector('link[rel~="icon"]');
@@ -157,5 +175,6 @@ function initializeSite() {
   updateHeaderState();
 }
 
+loadGoogleTagManager();
 setFavicon();
 loadIncludes().then(initializeSite);
