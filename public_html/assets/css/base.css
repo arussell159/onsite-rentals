@@ -9,7 +9,7 @@
   --color-line: #dce4e8;
   --color-surface: #f6f8f9;
   --color-white: #ffffff;
-  --font-sans: "Inter", Arial, sans-serif;
+  --font-sans: "Noto Sans", Arial, sans-serif;
   --shadow-menu: 0 22px 40px rgba(20, 43, 56, 0.12);
   --content-width: 1440px;
 }
